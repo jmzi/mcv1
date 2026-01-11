@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maya Chen | Creative Developer & Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cursor follower -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="logo">
+                <span class="logo-text">MC</span>
+                <span class="logo-dot"></span>
+            </a>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#work" class="nav-link">Work</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-nav">Let's Talk</a>
+                <span class="nav-time" id="navTime"></span>
+            </div>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="hero-grid"></div>
+            <div class="hero-gradient"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-intro">
+                <span class="hero-label">Creative Developer</span>
+                <span class="hero-available">
+                    <span class="status-dot"></span>
+                    Available for work
+                </span>
+            </div>
+            
+            <h1 class="hero-title">
+                <span class="title-line">I craft digital</span>
+                <span class="title-line">experiences that</span>
+                <span class="title-line title-highlight">matter<span class="title-dot">.</span></span>
+            </h1>
+            
+            <p class="hero-desc">I'm Maya Chen — a creative developer and designer based in San Francisco. I specialize in building immersive web experiences, interactive interfaces, and design systems that bridge creativity with functionality.</p>
+            
+            <div class="hero-cta">
+                <a href="#work" class="btn btn-primary">
+                    <span>View My Work</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#about" class="btn btn-ghost">Learn More</a>
+            </div>
+        </div>
+        
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="scroll-indicator"></div>
+        </div>
+        
+        <div class="hero-stats">
+            <div class="stat-item">
+                <span class="stat-value">7+</span>
+                <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-value">50+</span>
+                <span class="stat-label">Projects Completed</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-value">12</span>
+                <span class="stat-label">Awards Won</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-layout">
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&h=500&fit=crop" alt="Maya Chen" class="about-portrait-img">
+                        <div class="image-border"></div>
+                    </div>
+                    <div class="about-badge">
+                        <span class="badge-icon">✦</span>
+                        <span class="badge-text">Based in SF</span>
+                    </div>
+                </div>
+                
+                <div class="about-content">
+                    <span class="section-label">About Me</span>
+                    <h2 class="section-title">A developer who thinks like a designer.</h2>
+                    
+                    <div class="about-text">
+                        <p>With over 7 years in the industry, I've had the privilege of working with startups, agencies, and Fortune 500 companies to bring their digital visions to life.</p>
+                        <p>My approach combines technical precision with creative intuition. I believe the best digital products are those that feel invisible — where the technology fades into the background and the experience takes center stage.</p>
+                        <p>When I'm not coding, you'll find me exploring California's hiking trails, experimenting with 3D art, or contributing to open-source projects.</p>
+                    </div>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                </svg>
+                            </span>
+                            <div class="highlight-text">
+                                <span class="highlight-title">Frontend Focus</span>
+                                <span class="highlight-desc">React, Next.js, Three.js</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 16v-4M12 8h.01"/>
+                                </svg>
+                            </span>
+                            <div class="highlight-text">
+                                <span class="highlight-title">Design Tools</span>
+                                <span class="highlight-desc">Figma, Framer, After Effects</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="btn btn-outline">
+                        Download Resume
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section class="work" id="work">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Selected Work</span>
+                <h2 class="section-title">Projects I'm proud of.</h2>
+                <p class="section-desc">A curated selection of projects spanning web development, interactive experiences, and design systems.</p>
+            </div>
+            
+            <div class="work-grid">
+                <article class="project-card project-featured">
+                    <a href="#" class="project-link">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop" alt="Luminary Dashboard" class="project-img">
+                            <div class="project-overlay">
+                                <span class="view-project">View Project</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-year">2024</span>
+                                <span class="project-type">Web Application</span>
+                            </div>
+                            <h3 class="project-title">Luminary Analytics</h3>
+                            <p class="project-desc">A comprehensive analytics dashboard for SaaS companies with real-time data visualization and AI-powered insights.</p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>D3.js</span>
+                                <span>Node.js</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                
+                <article class="project-card">
+                    <a href="#" class="project-link">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&h=500&fit=crop" alt="Spatial Gallery" class="project-img">
+                            <div class="project-overlay">
+                                <span class="view-project">View Project</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-year">2024</span>
+                                <span class="project-type">Interactive Experience</span>
+                            </div>
+                            <h3 class="project-title">Spatial Gallery</h3>
+                            <p class="project-desc">An immersive 3D art gallery experience exploring the intersection of digital and physical space.</p>
+                            <div class="project-tech">
+                                <span>Three.js</span>
+                                <span>WebGL</span>
+                                <span>GSAP</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                
+                <article class="project-card">
+                    <a href="#" class="project-link">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=500&fit=crop" alt="Flow Design System" class="project-img">
+                            <div class="project-overlay">
+                                <span class="view-project">View Project</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-year">2023</span>
+                                <span class="project-type">Design System</span>
+                            </div>
+                            <h3 class="project-title">Flow Design System</h3>
+                            <p class="project-desc">A comprehensive component library and design system serving 200+ developers across multiple product teams.</p>
+                            <div class="project-tech">
+                                <span>Figma</span>
+                                <span>Storybook</span>
+                                <span>TypeScript</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                
+                <article class="project-card">
+                    <a href="#" class="project-link">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1614149162883-504ce4d13909?w=800&h=500&fit=crop" alt="Soundscape" class="project-img">
+                            <div class="project-overlay">
+                                <span class="view-project">View Project</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-year">2023</span>
+                                <span class="project-type">Web Application</span>
+                            </div>
+                            <h3 class="project-title">Soundscape</h3>
+                            <p class="project-desc">A collaborative music creation platform enabling real-time composition with remote musicians worldwide.</p>
+                            <div class="project-tech">
+                                <span>Next.js</span>
+                                <span>WebRTC</span>
+                                <span>Web Audio API</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            
+            <div class="work-cta">
+                <a href="#" class="btn btn-outline">
+                    View All Projects
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="skills-bg"></div>
+        <div class="container">
+            <div class="section-header section-header-light">
+                <span class="section-label">Capabilities</span>
+                <h2 class="section-title">Skills & expertise.</h2>
+            </div>
+            
+            <div class="skills-layout">
+                <div class="skills-list">
+                    <div class="skill-category">
+                        <h3 class="category-title">Development</h3>
+                        <ul class="category-skills">
+                            <li class="skill-item">
+                                <span class="skill-name">React / Next.js</span>
+                                <span class="skill-level">Expert</span>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">TypeScript</span>
+                                <span class="skill-level">Expert</span>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">Node.js</span>
+                                <span class="skill-level">Advanced</span>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">Three.js / WebGL</span>
+                                <span class="skill-level">Advanced</span>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-level">Intermediate</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3 class="category-title">Design</h3>
+                        <ul class="category-skills">
+                            <li class="skill-item">
+                                <span class="skill-name">UI/UX Design</span>
+                                <span class="skill-level">Expert</span>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">Figma</span>
+                                <span class="skill-level">Expert</span>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">Motion Design</span>
+                                <span class="skill-level">Advanced</span>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">3D Modeling</span>
+                                <span class="skill-level">Intermediate</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="skills-visual">
+                    <div class="skills-orbit">
+                        <div class="orbit-center">
+                            <span>Full Stack</span>
+                        </div>
+                        <div class="orbit-ring orbit-ring-1">
+                            <div class="orbit-item" style="--i: 0">React</div>
+                            <div class="orbit-item" style="--i: 1">TypeScript</div>
+                            <div class="orbit-item" style="--i: 2">Node.js</div>
+                            <div class="orbit-item" style="--i: 3">Python</div>
+                        </div>
+                        <div class="orbit-ring orbit-ring-2">
+                            <div class="orbit-item" style="--i: 0">Figma</div>
+                            <div class="orbit-item" style="--i: 1">Three.js</div>
+                            <div class="orbit-item" style="--i: 2">GSAP</div>
+                            <div class="orbit-item" style="--i: 3">WebGL</div>
+                            <div class="orbit-item" style="--i: 4">Framer</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="clients">
+                <span class="clients-label">Trusted by teams at</span>
+                <div class="clients-logos">
+                    <span class="client-logo">Stripe</span>
+                    <span class="client-logo">Vercel</span>
+                    <span class="client-logo">Linear</span>
+                    <span class="client-logo">Notion</span>
+                    <span class="client-logo">Figma</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-layout">
+                <div class="contact-content">
+                    <span class="section-label">Get in Touch</span>
+                    <h2 class="section-title">Let's work together.</h2>
+                    <p class="contact-desc">Have a project in mind or just want to chat? I'm always open to discussing new opportunities, creative ideas, or potential collaborations.</p>
+                    
+                    <a href="mailto:hello@mayachen.dev" class="contact-email">hello@mayachen.dev</a>
+                    
+                    <div class="contact-social">
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Dribbble">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 24C5.385 24 0 18.615 0 12S5.385 0 12 0s12 5.385 12 12-5.385 12-12 12zm10.12-10.358c-.35-.11-3.17-.953-6.384-.438 1.34 3.684 1.887 6.684 1.992 7.308 2.3-1.555 3.936-4.02 4.395-6.87zm-6.115 7.808c-.153-.9-.75-4.032-2.19-7.77l-.066.02c-5.79 2.015-7.86 6.025-8.04 6.4 1.73 1.358 3.92 2.166 6.29 2.166 1.42 0 2.77-.29 4-.814zm-11.62-2.58c.232-.4 3.045-5.055 8.332-6.765.135-.045.27-.084.405-.12-.26-.585-.54-1.167-.832-1.74C7.17 11.775 2.206 11.71 1.756 11.7l-.004.312c0 2.633.998 5.037 2.634 6.855zm-2.42-8.955c.46.008 4.683.026 9.477-1.248-1.698-3.018-3.53-5.558-3.8-5.928-2.868 1.35-5.01 3.99-5.676 7.17zM9.6 2.052c.282.38 2.145 2.914 3.822 6 3.645-1.365 5.19-3.44 5.373-3.702-1.81-1.61-4.19-2.586-6.795-2.586-.825 0-1.63.1-2.4.285zm10.335 3.483c-.218.29-1.935 2.493-5.724 4.04.24.49.47.985.68 1.486.08.18.15.36.22.53 3.41-.43 6.8.26 7.14.33-.02-2.42-.88-4.64-2.31-6.38z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="project">Project Type</label>
+                        <select id="project" name="project">
+                            <option value="">Select a project type</option>
+                            <option value="website">Website Development</option>
+                            <option value="webapp">Web Application</option>
+                            <option value="design">UI/UX Design</option>
+                            <option value="consulting">Consulting</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span>Send Message</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-text">MC</span>
+                        <span class="logo-dot"></span>
+                    </a>
+                    <p class="footer-tagline">Crafting digital experiences since 2017</p>
+                </div>
+                
+                <div class="footer-nav">
+                    <a href="#about">About</a>
+                    <a href="#work">Work</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Maya Chen. All rights reserved.</p>
+                    <p class="footer-credits">Designed & Built with care in San Francisco</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Update time in navigation
+        function updateTime() {
+            const now = new Date();
+            const options = { 
+                hour: '2-digit', 
+                minute: '2-digit',
+                timeZone: 'America/Los_Angeles'
+            };
+            document.getElementById('navTime').textContent = 
+                `SF ${now.toLocaleTimeString('en-US', options)}`;
+        }
+        updateTime();
+        setInterval(updateTime, 1000);
+
+        // Custom cursor
+        const cursor = document.getElementById('cursor');
+        const cursorFollower = document.getElementById('cursorFollower');
+        
+        let mouseX = 0, mouseY = 0;
+        let cursorX = 0, cursorY = 0;
+        let followerX = 0, followerY = 0;
+        
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+        });
+        
+        function animateCursor() {
+            cursorX += (mouseX - cursorX) * 0.2;
+            cursorY += (mouseY - cursorY) * 0.2;
+            followerX += (mouseX - followerX) * 0.1;
+            followerY += (mouseY - followerY) * 0.1;
+            
+            cursor.style.transform = `translate(${cursorX}px, ${cursorY}px)`;
+            cursorFollower.style.transform = `translate(${followerX}px, ${followerY}px)`;
+            
+            requestAnimationFrame(animateCursor);
+        }
+        animateCursor();
+        
+        // Cursor hover effects
+        document.querySelectorAll('a, button').forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                cursor.classList.add('cursor-hover');
+                cursorFollower.classList.add('cursor-hover');
+            });
+            el.addEventListener('mouseleave', () => {
+                cursor.classList.remove('cursor-hover');
+                cursorFollower.classList.remove('cursor-hover');
+            });
+        });
+
+        // Mobile navigation
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+        
+        navToggle.addEventListener('click', () => {
+            navToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+            document.body.classList.toggle('nav-open');
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    navToggle.classList.remove('active');
+                    navLinks.classList.remove('active');
+                    document.body.classList.remove('nav-open');
+                }
+            });
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.project-card, .skill-category, .about-image, .about-content').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Header scroll effect
+        const header = document.querySelector('.header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const btn = this.querySelector('button');
+            const originalText = btn.innerHTML;
+            btn.innerHTML = '<span>Sending...</span>';
+            btn.disabled = true;
+            
+            setTimeout(() => {
+                btn.innerHTML = '<span>Message Sent!</span>';
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.disabled = false;
+                    this.reset();
+                }, 2000);
+            }, 1500);
+        });
+
+        // Parallax effect for hero
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero-content');
+            if (hero && scrolled < window.innerHeight) {
+                hero.style.transform = `translateY(${scrolled * 0.3}px)`;
+                hero.style.opacity = 1 - (scrolled / window.innerHeight);
+            }
+        });
+    </script>
+</body>
+</html>
