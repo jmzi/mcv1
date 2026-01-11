@@ -1257,7 +1257,7 @@ ul {
 @media (max-width: 1024px) {
     .hero-stats {
         position: static;
-        justify-content: flex-start;
+        justify-content: center;
         margin-top: 4rem;
     }
     
@@ -1346,8 +1346,9 @@ ul {
     }
     
     .hero-stats {
-        flex-direction: column;
+        flex-direction: row;
         gap: 1.5rem;
+       justify-content: center;
     }
     
     .stat-item {
